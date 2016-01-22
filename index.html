@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toast Face generator</title>
+  <script src="lib/main.js"></script>
+  <style>
+    body {
+      background: red; /* not working, let's see some red */
+      background: -moz-linear-gradient( top ,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 255, 0, 1) 15%,
+      rgba(0, 255, 0, 1) 30%,
+      rgba(0, 255, 255, 1) 50%,
+      rgba(0, 0, 255, 1) 65%,
+      rgba(255, 0, 255, 1) 80%,
+      rgba(255, 0, 0, 1) 100%);
+      background: -webkit-gradient(linear,  left top,  left bottom,
+      color-stop(0%, rgba(255, 0, 0, 1)),
+      color-stop(15%, rgba(255, 255, 0, 1)),
+      color-stop(30%, rgba(0, 255, 0, 1)),
+      color-stop(50%, rgba(0, 255, 255, 1)),
+      color-stop(65%, rgba(0, 0, 255, 1)),
+      color-stop(80%, rgba(255, 0, 255, 1)),
+      color-stop(100%, rgba(255, 0, 0, 1)));
+    }
+    div {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin-top: 15vh;
+      width: 30vh;
+      image-rendering:optimizeSpeed;             /* Legal fallback */
+      image-rendering:-moz-crisp-edges;          /* Firefox        */
+      image-rendering:-o-crisp-edges;            /* Opera          */
+      image-rendering:-webkit-optimize-contrast; /* Safari         */
+      image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+      image-rendering:crisp-edges;               /* CSS4 Proposed  */
+      image-rendering:pixelated;                 /* CSS4 Proposed  */
+      -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+    }
+    h1 {
+      color: #fff;
+      font-family: courier,monospace;
+      font-size: 10vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="img-container"></div>
+  <div>
+    <h1>Mr. Toast</h1>
+  </div>
+</body>
+</html>
